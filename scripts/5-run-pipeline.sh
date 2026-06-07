@@ -8,6 +8,9 @@ TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
 echo "Inicio: $TIMESTAMP"
 echo ""
 
+# Cambiar a directorio de scripts
+cd "$(dirname "$0")" || exit 1
+
 # Step 1
 echo "📊 PASO 1: Analizando métricas de redes..."
 node 1-analyze-metrics.js
@@ -57,11 +60,12 @@ echo "✨ PIPELINE COMPLETADO EXITOSAMENTE"
 echo "Fin: $(date +"%Y-%m-%d %H:%M:%S")"
 echo ""
 echo "📁 Reportes generados:"
-ls -lh ./pipeline/reports/
+ls -lh ../pipeline/reports/
 echo ""
 echo "💾 Ejecutando git commit..."
+cd .. || exit 1
 git add pipeline/reports/
-git commit -m "pipeline: reportes generados $(date +%Y-%m-%d)"
-git push
+git commit -m "pipeline: reportes generados $(date +%Y-%m-%d)" || true
+git push || true
 
 echo "✅ Todo completado"
