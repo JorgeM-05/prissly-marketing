@@ -1,0 +1,19 @@
+{
+  "googleSheetId": "YOUR_GOOGLE_SHEET_ID",
+  "googleApiKey": "YOUR_GOOGLE_API_KEY",
+  "claudeApiKey": "YOUR_CLAUDE_API_KEY",
+  "paths": {
+    "screenshots": "./pipeline/screenshots",
+    "canvaContent": "./content",
+    "reports": "./pipeline/reports",
+    "ideas": "./pipeline/ideas"
+  },
+  "metrics": {
+    "platforms": ["instagram", "tiktok", "facebook", "linkedin", "google-ads"],
+    "updateFrequency": "daily"
+  },
+  "pipeline": {
+    "runOnSchedule": true,
+    "scheduleTime": "09:00"
+  }
+}

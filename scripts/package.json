@@ -1,0 +1,22 @@
+{
+  "name": "prissly-marketing-pipeline",
+  "version": "1.0.0",
+  "description": "Marketing pipeline automation para Prissly",
+  "main": "5-run-pipeline.sh",
+  "scripts": {
+    "analyze-metrics": "node 1-analyze-metrics.js",
+    "analyze-content": "node 2-analyze-content.js",
+    "generate-ideas": "node 3-generate-ideas.js",
+    "update-sheet": "node 4-update-sheet.js",
+    "pipeline": "bash 5-run-pipeline.sh"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "axios": "^1.4.0",
+    "google-spreadsheet": "^4.0.0",
+    "chalk": "^5.0.0",
+    "jimp": "^0.22.0",
+    "tesseract.js": "^4.0.0",
+    "@anthropic-ai/sdk": "^0.9.0"
+  }
+}
