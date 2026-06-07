@@ -1,16 +1,18 @@
 #!/usr/bin/env node
 
 const Logger = require('./utils/logger');
-const logger = new Logger('update-sheet');
 const fs = require('fs');
 const path = require('path');
+const { reports } = require('./utils/paths');
+
+const logger = new Logger('update-sheet');
 
 async function updateSheet() {
   logger.info('Actualizando Google Sheet con datos generados...');
 
   try {
     // Leer datos del último reporte
-    const reportsDir = './pipeline/reports';
+    const reportsDir = reports();
     const latestMetrics = fs.readdirSync(reportsDir)
       .filter(f => f.startsWith('METRICS-') && f.endsWith('.md'))
       .sort()

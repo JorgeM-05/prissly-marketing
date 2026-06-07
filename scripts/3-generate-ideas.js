@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const Logger = require('./utils/logger');
 const { Anthropic } = require('@anthropic-ai/sdk');
+const { reports, ideas, ensureDir } = require('./utils/paths');
 
 const logger = new Logger('generate-ideas');
 const client = new Anthropic({
@@ -13,7 +14,8 @@ const client = new Anthropic({
 async function generateIdeas() {
   logger.info('Generando nuevas ideas basadas en análisis...');
 
-  const reportsDir = './pipeline/reports';
+  const reportsDir = reports();
+  ensureDir(ideas());
   const metricsReport = fs.readdirSync(reportsDir)
     .filter(f => f.startsWith('METRICS-'))
     .sort()
@@ -67,13 +69,13 @@ async function generateIdeas() {
       ]
     });
 
-    const ideas = response.content[0].text;
+    const ideaContent = response.content[0].text;
 
     // Guardar ideas
-    const ideasPath = './pipeline/ideas/IDEAS-' +
-      new Date().toISOString().split('T')[0] + '.md';
+    const ideasPath = path.join(ideas(), 'IDEAS-' +
+      new Date().toISOString().split('T')[0] + '.md');
 
-    fs.writeFileSync(ideasPath, ideas);
+    fs.writeFileSync(ideasPath, ideaContent);
     logger.success(`Ideas generadas y guardadas en: ${ideasPath}`);
 
     // Crear tarjeta en GitHub Project (simulado por ahora)

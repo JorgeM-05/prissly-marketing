@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const Logger = require('./utils/logger');
 const { Anthropic } = require('@anthropic-ai/sdk');
+const { screenshots, reports, ensureDir } = require('./utils/paths');
 
 const logger = new Logger('analyze-metrics');
 const client = new Anthropic({
@@ -13,22 +14,23 @@ const client = new Anthropic({
 async function analyzeMetrics() {
   logger.info('Iniciando análisis de métricas de redes sociales...');
 
-  const screenshotDir = './pipeline/screenshots';
+  const screenshotDir = screenshots();
+  ensureDir(reports());
   if (!fs.existsSync(screenshotDir)) {
     logger.error(`Directorio no existe: ${screenshotDir}`);
     return;
   }
 
-  const screenshots = fs.readdirSync(screenshotDir).filter(f =>
+  const screenshotFiles = fs.readdirSync(screenshotDir).filter(f =>
     f.endsWith('.png') || f.endsWith('.jpg') || f.endsWith('.jpeg')
   );
 
-  if (screenshots.length === 0) {
+  if (screenshotFiles.length === 0) {
     logger.warning('No hay screenshots para analizar. Coloca imágenes en ./pipeline/screenshots/');
     return;
   }
 
-  logger.info(`Encontrados ${screenshots.length} screenshots para analizar`);
+  logger.info(`Encontrados ${screenshotFiles.length} screenshots para analizar`);
 
   const report = {
     timestamp: new Date().toISOString(),
@@ -37,7 +39,7 @@ async function analyzeMetrics() {
     summary: {}
   };
 
-  for (const screenshot of screenshots) {
+  for (const screenshot of screenshotFiles) {
     logger.info(`Analizando: ${screenshot}`);
 
     const imagePath = path.join(screenshotDir, screenshot);
@@ -94,15 +96,15 @@ async function analyzeMetrics() {
   }
 
   // Guardar reporte JSON
-  const reportPath = './pipeline/reports/analisis-metricas-' +
-    new Date().toISOString().split('T')[0] + '.json';
+  const reportPath = path.join(reports(), 'analisis-metricas-' +
+    new Date().toISOString().split('T')[0] + '.json');
 
   fs.writeFileSync(reportPath, JSON.stringify(report, null, 2));
 
   // Generar resumen en Markdown
   const mdReport = generateMarkdownReport(report);
-  const mdPath = './pipeline/reports/METRICS-' +
-    new Date().toISOString().split('T')[0] + '.md';
+  const mdPath = path.join(reports(), 'METRICS-' +
+    new Date().toISOString().split('T')[0] + '.md');
 
   fs.writeFileSync(mdPath, mdReport);
 

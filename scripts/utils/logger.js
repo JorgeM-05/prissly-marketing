@@ -5,7 +5,17 @@ const path = require('path');
 class Logger {
   constructor(scriptName) {
     this.scriptName = scriptName;
-    this.logFile = path.join(__dirname, `../pipeline/reports/${scriptName}-${new Date().toISOString().split('T')[0]}.log`);
+    this.logFile = null;
+  }
+
+  _ensureLogFile() {
+    if (this.logFile === null) {
+      const reportsDir = path.join(process.cwd(), '../pipeline/reports');
+      if (!fs.existsSync(reportsDir)) {
+        fs.mkdirSync(reportsDir, { recursive: true });
+      }
+      this.logFile = path.join(reportsDir, `${this.scriptName}-${new Date().toISOString().split('T')[0]}.log`);
+    }
   }
 
   info(message) {
@@ -29,7 +39,12 @@ class Logger {
   }
 
   _writeLog(message) {
-    fs.appendFileSync(this.logFile, `${new Date().toISOString()} - ${message}\n`);
+    this._ensureLogFile();
+    try {
+      fs.appendFileSync(this.logFile, `${new Date().toISOString()} - ${message}\n`);
+    } catch (err) {
+      // Silent fail if logging fails
+    }
   }
 }
 

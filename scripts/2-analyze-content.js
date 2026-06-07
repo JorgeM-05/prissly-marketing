@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const Logger = require('./utils/logger');
 const { Anthropic } = require('@anthropic-ai/sdk');
+const { content, reports, ensureDir } = require('./utils/paths');
 
 const logger = new Logger('analyze-content');
 const client = new Anthropic({
@@ -13,8 +14,9 @@ const client = new Anthropic({
 async function analyzeContent() {
   logger.info('Iniciando análisis de contenido de Canva...');
 
-  const contentDir = './content';
+  const contentDir = content();
   const subdirs = ['videos', 'images', 'posts', 'designs'];
+  ensureDir(reports());
 
   const analysis = {
     timestamp: new Date().toISOString(),
@@ -94,8 +96,8 @@ async function analyzeContent() {
   }
 
   // Guardar reporte
-  const mdPath = './pipeline/reports/CONTENT-ANALYSIS-' +
-    new Date().toISOString().split('T')[0] + '.md';
+  const mdPath = path.join(reports(), 'CONTENT-ANALYSIS-' +
+    new Date().toISOString().split('T')[0] + '.md');
 
   const mdContent = generateContentReport(analysis);
   fs.writeFileSync(mdPath, mdContent);
