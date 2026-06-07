@@ -1,0 +1,244 @@
+{
+  "platform": "facebook",
+  "timestamp": "2026-06-07T03:54:09.624Z",
+  "screenshots": [
+    {
+      "filename": "image copy 2.png",
+      "analysis": {
+        "analisis_facebook": {
+          "fecha_publicacion": "9 de mayo a las 8:50 p.m.",
+          "plataforma": "Facebook",
+          "cuenta": "Prissly",
+          "metricas": {
+            "reach_impressions": "No visible",
+            "engagement_rate": "No visible",
+            "clicks_ctr": "No visible",
+            "conversiones": "No visible"
+          },
+          "tendencia": "→",
+          "observaciones_clave": [
+            "Post sin métricas visibles en la captura",
+            "Contenido enfocado en gestión de caja/ventas de restaurante",
+            "Hashtags: #restaurante #caja #ventasrestaurante #negocio #fyp",
+            "Menciona cambios importantes el 14 de mayo",
+            "Imagen muestra recibos, dinero y lista de tareas de control",
+            "Tono informal y educativo",
+            "Dirigido a emprendedores/dueños de restaurantes",
+            "No se pueden extraer métricas cuantitativas de esta captura"
+          ],
+          "nota_importante": "Esta captura no muestra el panel de analytics de Facebook. Para obtener métricas de reach, engagement rate y CTR, se necesitaría acceder al Facebook Business Suite o Meta Analytics."
+        }
+      }
+    },
+    {
+      "filename": "image copy 3.png",
+      "analysis": {
+        "analisis_metricas_facebook": {
+          "reach_impressions": {
+            "valor": "No disponible",
+            "nota": "No se muestra en la captura de pantalla"
+          },
+          "engagement_rate": {
+            "valor": 3,
+            "unidad": "reacciones",
+            "desglose": {
+              "likes": 3,
+              "comentarios": "No visible",
+              "compartidos": "No visible"
+            },
+            "engagement_bajo": true
+          },
+          "clicks_ctr": {
+            "valor": "No disponible",
+            "nota": "No se muestra en la captura"
+          },
+          "conversiones": {
+            "valor": "No visible",
+            "nota": "No hay datos de conversión mostrados"
+          },
+          "tendencia": "↓",
+          "observaciones_clave": [
+            "Bajo engagement: Solo 3 reacciones para un post publicado",
+            "Contenido viral potencial: Hashtags #fyp #viral sugieren intención de viralidad",
+            "Formato relatable: Meme sobre confusión en restaurante (orden sin cebolla vs con cebolla)",
+            "Hora de publicación: 8:45 p.m. - horario de uso moderado",
+            "Nicho: Contenido de mesero/restaurante con enfoque de humor",
+            "Falta de alcance: No se observan métricas de reach/impressions",
+            "Call to action implícito: Humano e identificable"
+          ],
+          "recomendaciones": [
+            "Amplificar con anuncios pagos",
+            "Mejorar tiempo de publicación",
+            "Aumentar CTAs explícitos",
+            "Considerar responder comentarios para aumentar engagement"
+          ]
+        }
+      }
+    },
+    {
+      "filename": "image copy 4.png",
+      "analysis": {
+        "análisis_métricas": {
+          "plataforma": "Facebook",
+          "negocio": "Prissly - Pasto, Nariño, Colombia",
+          "tipo_contenido": "Video - Meme/Humor sobre errores de servicio",
+          "fecha_publicación": "7 de mayo a las 9:15 p.m.",
+          "métricas_disponibles": {
+            "reach_impressions": {
+              "valor": "No especificado",
+              "estado": "No visible en la imagen"
+            },
+            "engagement_rate": {
+              "valor": "3",
+              "unidad": "Reacciones (likes)",
+              "comentarios": "No visible",
+              "shares": "No visible",
+              "observación": "Bajo engagement inicial"
+            },
+            "clicks_ctr": {
+              "valor": "No especificado",
+              "estado": "No visible"
+            },
+            "conversiones": {
+              "valor": "No visible",
+              "estado": "No aplicable para este tipo de contenido"
+            }
+          },
+          "tendencia": "↓",
+          "justificación_tendencia": "Solo 3 reacciones sugiere bajo alcance inicial y engagement limitado",
+          "observaciones_clave": [
+            "Contenido de humor/meme sobre problemas de servicio",
+            "Objetivo aparente: viralidad y conciencia sobre mejoras operacionales",
+            "Mensaje transparente: reconoce 4 mesas esperando sin respuesta",
+            "Call-to-action implícito: 'Hay una mejor forma de trabajar'",
+            "Hashtags relevantes: #mesero #restaurante #pedidos #fyp #viral #gastrobar",
+            "Engagement muy bajo (3 likes) pese a contenido viral potencial",
+            "Posible razón: imagen muy reciente o alcance limitado en segmentación"
+          ],
+          "recomendaciones": {
+            "corto_plazo": [
+              "Promocionar el post con presupuesto publicitario",
+              "Responder a comentarios rápidamente",
+              "Replicar en otras plataformas (TikTok, Instagram Reels)"
+            ],
+            "largo_plazo": [
+              "Monitorear si el contenido generó cambios reales en operaciones",
+              "Compartir updates sobre mejoras implementadas",
+              "Mantener tono honesto y autocrítico con audiencia"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "filename": "image copy 5.png",
+      "analysis": {
+        "metrica_facebook_analisis": {
+          "reach_impressions": {
+            "dato": "No visible",
+            "nota": "No se muestran métricas de alcance o impresiones en la imagen"
+          },
+          "engagement_rate": {
+            "likes": 28,
+            "comentarios": "No cuantificado",
+            "compartidos": 1,
+            "engagement_visible": "Bajo (29 interacciones totales)",
+            "tasa_estimada": "Baja"
+          },
+          "clicks_ctr": {
+            "dato": "No visible",
+            "nota": "No se dispone de datos de clics o CTR"
+          },
+          "conversiones": {
+            "dato": "No visible",
+            "nota": "No hay datos de conversiones mostrados"
+          },
+          "tendencia": "→",
+          "observaciones_clave": [
+            "Bajo engagement: solo 28 likes y 1 compartido",
+            "Contenido en español (posiblemente mercado hispanohablante)",
+            "Meme sobre problemas en restaurantes (papel tachado, pedido confuso, cocina gritando)",
+            "Hashtags relevantes: #restaurante #gastrobar #mesero #fyp #caosrestaurante",
+            "Contenido temático sobre organización en restaurantes",
+            "Falta información de Analytics: no se ven métricas de Facebook Insights",
+            "La interacción es muy baja para el tipo de contenido",
+            "Posible oportunidad de mejorar distribución o targeting"
+          ]
+        }
+      }
+    },
+    {
+      "filename": "image copy.png",
+      "analysis": {
+        "analisis_facebook": {
+          "metricas_disponibles": {
+            "reach_impressions": "No visible",
+            "engagement_rate": "No visible",
+            "clicks_ctr": "No visible",
+            "conversiones": "No visible"
+          },
+          "informacion_extraible": {
+            "plataforma": "Facebook",
+            "empresa": "Prissly",
+            "fecha_publicacion": "10 de mayo a las 9:07 p.m.",
+            "contenido": "Post sobre problemas de sistema en restaurante",
+            "tipo_post": "Meme/Video educativo",
+            "hashtags": [
+              "#restaurante",
+              "#caos",
+              "#sistemapararestarurante",
+              "#gastrobar",
+              "#fyp"
+            ]
+          },
+          "tendencia": "→",
+          "observaciones_clave": {
+            "nota_1": "No se visualizan métricas cuantitativas (alcance, engagement, clicks)",
+            "nota_2": "Post es de carácter educativo/informativo sobre problemas comunes en restaurantes",
+            "nota_3": "Formato de meme con subtítulos podría generar engagement alto",
+            "nota_4": "Hashtags relevantes para industria gastronómica",
+            "nota_5": "Imagen de situación relatable para restaurantes (caos operacional)",
+            "recomendacion": "Se requiere acceso a Facebook Analytics para extraer métricas precisas"
+          }
+        }
+      }
+    },
+    {
+      "filename": "image.png",
+      "analysis": {
+        "analisis_facebook_prissly": {
+          "reach_impressions": {
+            "valor": "No visible",
+            "nota": "La métrica no se muestra en la captura de pantalla"
+          },
+          "engagement_rate": {
+            "valor": "No cuantificable",
+            "observacion": "Se observa 1 publicación con comentarios, pero sin métricas de engagement explícitas"
+          },
+          "clicks_ctr": {
+            "valor": "No visible",
+            "nota": "No hay datos de clicks o CTR visibles en la imagen"
+          },
+          "conversiones": {
+            "valor": "No visible",
+            "nota": "No se muestran métricas de conversión en esta vista"
+          },
+          "tendencia": "→",
+          "observaciones_clave": {
+            "1_seguidores": "4 seguidores • 0 seguidos (audiencia muy pequeña)",
+            "tipo_pagina": "Software / Digitalización de restaurantes",
+            "ubicacion": "Pasto-Nariño, Pasto, Colombia, 52001",
+            "estado": "Siempre abierto",
+            "ultima_publicacion": "10 de mayo a las 9:07 p.m.",
+            "contenido_publicacion": "E-commerce | Chatbot | Desarrollo de Software",
+            "calificacion": "Aún sin calificación (0 opiniones)",
+            "contacto": "contacto.prissly@gmail.com",
+            "sitio_web": "prissly.com",
+            "recomendacion": "Página muy nueva o poco activa. Requiere estrategia de contenido y crecimiento de audiencia"
+          }
+        }
+      }
+    }
+  ],
+  "summary": {}
+}

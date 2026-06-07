@@ -1,0 +1,86 @@
+{
+  "platform": "tiktok",
+  "timestamp": "2026-06-07T03:54:51.886Z",
+  "screenshots": [
+    {
+      "filename": "image.png",
+      "analysis": {
+        "plataforma": "TikTok",
+        "cuenta": "Prissly",
+        "usuario": "prissly_official",
+        "fecha_analisis": "2024",
+        "metricas": {
+          "seguidores": {
+            "valor": 315,
+            "tendencia": "↑"
+          },
+          "siguiendo": {
+            "valor": 0
+          },
+          "me_gusta": {
+            "valor": 420
+          },
+          "reach_impressions": {
+            "valor": "No disponible directamente",
+            "nota": "Se puede inferir por los views de videos individuales"
+          },
+          "engagement_rate": {
+            "valor": "Calculable pero no mostrado",
+            "formula": "(Me gusta + comentarios + shares) / seguidores",
+            "nota": "Requiere acceso a analytics completo"
+          },
+          "clicks_ctr": {
+            "valor": "No visible"
+          },
+          "conversiones": {
+            "valor": "No visible",
+            "tipo": "Restaurante - Digitalización"
+          },
+          "videos_por_view": [
+            {
+              "posicion": 1,
+              "views": 4660
+            },
+            {
+              "posicion": 2,
+              "views": 1503
+            },
+            {
+              "posicion": 3,
+              "views": 153
+            },
+            {
+              "posicion": 4,
+              "views": 1585
+            },
+            {
+              "posicion": 5,
+              "views": 1238
+            },
+            {
+              "posicion": 6,
+              "views": 1247
+            }
+          ]
+        },
+        "observaciones_clave": [
+          "Perfil de negocio (Restaurante): Prissly - Digitalización de restaurantes",
+          "Contenido: Videos de operaciones en restaurante, dinero, cocina y personal",
+          "Variabilidad alta en views: Video mejor (4660) vs peor (153) = 30x diferencia",
+          "Contenido más exitoso: Tutoriales de sistemas/dashboards y operaciones",
+          "Bajo engagement relativo: 420 likes vs 315 seguidores (ratio bajo)",
+          "Call-to-action: 'Prueba gratis muy pronto' - conversión incipiente",
+          "Tendencia general: → (Cuenta en fase inicial de crecimiento)"
+        ],
+        "recomendaciones": [
+          "Analizar qué videos generan más views (dashboards) y replicar formato",
+          "Aumentar frecuencia de publicación para impulsar crecimiento",
+          "Mejorar engagement con CTA más claros y directos",
+          "Usar analytics completo de TikTok Business para datos detallados",
+          "Segmentar contenido: educativo vs operacional"
+        ]
+      }
+    }
+  ],
+  "summary": {}
+}

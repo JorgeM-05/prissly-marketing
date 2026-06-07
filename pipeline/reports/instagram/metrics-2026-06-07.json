@@ -1,0 +1,80 @@
+{
+  "platform": "instagram",
+  "timestamp": "2026-06-07T03:54:41.100Z",
+  "screenshots": [
+    {
+      "filename": "image copy.png",
+      "analysis": {
+        "analisis_instagram": {
+          "nota_importante": "Las imágenes mostradas son contenido de galería/feed, no métricas de analytics",
+          "datos_disponibles": {
+            "reach_impressions": "NO VISIBLE",
+            "engagement_rate": "NO VISIBLE",
+            "clicks_ctr": "NO VISIBLE",
+            "conversiones": "NO VISIBLE",
+            "tendencia": "NO DETERMINADA"
+          },
+          "observaciones_clave": [
+            "Se muestra una galería de fotos de un restaurante/negocio de comida",
+            "Las imágenes incluyen: staff preparando alimentos, platos finales, interacción con clientes",
+            "Una imagen contiene texto 'USANDO PAPEL' (posible referencia a método o promoción)",
+            "Presencia de menús y precios visibles en algunas fotos",
+            "Ambiente concurrido, indicando actividad comercial activa",
+            "Las fotos parecen ser de calidad profesional o semi-profesional",
+            "No se proporcionan métricas cuantitativas de rendimiento"
+          ],
+          "recomendacion": "Para obtener análisis de métricas reales, accede a Instagram Insights en tu cuenta de negocio y comparte screenshots de las secciones: Alcance, Interacción, Clics, o Conversiones."
+        }
+      }
+    },
+    {
+      "filename": "image.png",
+      "analysis": {
+        "analisis_instagram_prissly": {
+          "cuenta": "prissly_official",
+          "tipo_negocio": "Software - Digitalización de Restaurantes",
+          "metricas_disponibles": {
+            "publicaciones": 5,
+            "seguidores": 3,
+            "siguiendo": 0
+          },
+          "reach_impressions": {
+            "valor": "No visible",
+            "nota": "No se muestran métricas de alcance en la captura"
+          },
+          "engagement_rate": {
+            "valor": "No calculable",
+            "nota": "No hay datos de likes, comentarios o shares visibles"
+          },
+          "clicks_ctr": {
+            "valor": "No visible",
+            "nota": "No se muestran métricas de clicks en la interfaz mostrada"
+          },
+          "conversiones": {
+            "valor": "No visible",
+            "nota": "No hay datos de conversiones mostrados"
+          },
+          "tendencia": "→",
+          "observaciones_clave": [
+            "Cuenta muy nueva o con bajo engagement (solo 3 seguidores)",
+            "5 publicaciones relacionadas con restaurantes y personal de cocina",
+            "Contenido visual de calidad (fotos de comida y operaciones)",
+            "Bio clara con call-to-action: 'Prueba gratis, muy pronto'",
+            "Sigue a 2 cuentas: j_a.munoz e ittalandazuri",
+            "Botones de acción disponibles: Seguir y Enviar mensaje",
+            "Estrategia enfocada en B2B para restaurantes",
+            "Falta de datos analíticos básicos sugiere cuenta reciente"
+          ],
+          "recomendaciones": [
+            "Aumentar frecuencia de publicaciones",
+            "Generar contenido educativo sobre software de restaurantes",
+            "Implementar hashtags relevantes (#RestauranteDigital #POS #Software)",
+            "Crear CTAs más agresivos hacia el landing page",
+            "Utilizar Instagram Stories y Reels para mayor alcance"
+          ]
+        }
+      }
+    }
+  ],
+  "summary": {}
+}
