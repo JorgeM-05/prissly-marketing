@@ -1,0 +1,49 @@
+{
+  "version": "1.0.0",
+  "created_at": "2025-01-15",
+  "updated_at": "2025-01-15",
+  "pipeline_phases": {
+    "ideas": {
+      "name": "Fase 1: Ideas",
+      "description": "Recopilar, analizar y argumentar ideas",
+      "status": "active",
+      "items": []
+    },
+    "analysis": {
+      "name": "Fase 2: Análisis y Refinamiento",
+      "description": "Filtrar y mejorar ideas",
+      "status": "active",
+      "items": []
+    },
+    "approval_1": {
+      "name": "Fase 3: Aprobación 1",
+      "description": "Primera aprobación (Jorge)",
+      "status": "active",
+      "items": []
+    },
+    "guion": {
+      "name": "Fase 4: Construcción de Guión",
+      "description": "Crear guión completo y argumentado",
+      "status": "active",
+      "items": []
+    },
+    "approval_2": {
+      "name": "Fase 5: Aprobación 2",
+      "description": "Segunda aprobación (Jorge)",
+      "status": "active",
+      "items": []
+    },
+    "creation": {
+      "name": "Fase 6: Creación de Contenido",
+      "description": "Crear contenido (video, post, diseño)",
+      "status": "active",
+      "items": []
+    },
+    "final_review": {
+      "name": "Fase 7: Review Final",
+      "description": "Última aprobación y ajustes",
+      "status": "active",
+      "items": []
+    }
+  }
+}
