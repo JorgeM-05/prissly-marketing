@@ -13,13 +13,34 @@ function ensureDir(dirPath) {
   }
 }
 
+const platforms = ['facebook', 'instagram', 'tiktok', 'linkedin', 'google-ads'];
+
 module.exports = {
   projectRoot,
   resolvePath,
   ensureDir,
+  platforms,
   screenshots: () => resolvePath('pipeline/screenshots'),
+  screenshotsByPlatform: (platform) => {
+    const dir = resolvePath(`pipeline/screenshots/${platform}`);
+    return dir;
+  },
+  allScreenshotPlatforms: () => {
+    const screenshotsDir = resolvePath('pipeline/screenshots');
+    if (!fs.existsSync(screenshotsDir)) {
+      return [];
+    }
+    return fs.readdirSync(screenshotsDir)
+      .filter(item => fs.statSync(path.join(screenshotsDir, item)).isDirectory())
+      .sort();
+  },
   reports: () => {
     const dir = resolvePath('pipeline/reports');
+    ensureDir(dir);
+    return dir;
+  },
+  reportsByPlatform: (platform) => {
+    const dir = resolvePath(`pipeline/reports/${platform}`);
     ensureDir(dir);
     return dir;
   },
